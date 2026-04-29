@@ -4,9 +4,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JBK Consulting LLC — Software Development</title>
+  <title>JBK Consulting LLC — Custom Software Consultant in Idaho</title>
   <meta name="description"
-    content="Custom software development consulting specializing in Ruby on Rails, Elixir/Phoenix, Node.js, and .NET" />
+    content="JBK Consulting helps small businesses modernize legacy software, build custom web applications, and connect business systems with reliable APIs." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.jbkconsultingllc.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jbkconsultingllc.com/" />
+  <meta property="og:title" content="JBK Consulting LLC — Custom Software Consultant in Idaho" />
+  <meta property="og:description"
+    content="Custom software development, legacy modernization, API integrations, and technical advisory for small businesses." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JBK Consulting LLC — Custom Software Consultant in Idaho" />
+  <meta name="twitter:description"
+    content="Custom software development, legacy modernization, API integrations, and technical advisory for small businesses." />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "JBK Consulting LLC",
+      "url": "https://www.jbkconsultingllc.com/",
+      "email": "justin@jbkconsultingllc.com",
+      "description": "Custom software development consulting for small businesses, including legacy modernization, web applications, API integrations, and technical advisory.",
+      "areaServed": [
+        { "@type": "State", "name": "Idaho" },
+        { "@type": "Country", "name": "United States" }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Justin Kay"
+      },
+      "knowsAbout": [
+        "Ruby on Rails",
+        "Elixir Phoenix",
+        "Node.js",
+        ".NET",
+        "PostgreSQL",
+        "React",
+        "Legacy software modernization",
+        "Custom web application development",
+        "API design and integration"
+      ],
+      "serviceType": [
+        "Custom Software Development",
+        "Legacy System Modernization",
+        "Web Application Development",
+        "API Design and Integration",
+        "Technical Advisory"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of businesses does JBK Consulting work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "JBK Consulting works with small businesses, founders, and operating teams that need custom web applications, internal tools, legacy software modernization, API integrations, or senior technical advisory."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help modernize an existing Rails, .NET, or custom application?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. JBK Consulting can assess an existing codebase, identify risk areas, stabilize production systems, improve deployment workflows, and plan modernization work without requiring a disruptive full rewrite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work remotely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. JBK Consulting is based in Idaho and works remotely with clients nationwide."
+          }
+        }
+      ]
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -37,8 +116,8 @@
       --ink: #1c1c1a;
       --ink-mid: #4a4a45;
       --ink-soft: #7a7a72;
-      --accent: oklch(0.52 0.12 155);
-      --accent-light: oklch(0.93 0.05 155);
+      --accent: #2f7d56;
+      --accent-light: #e4f3eb;
       --border: #e2e0d8;
       --serif: 'Lora', Georgia, serif;
       --sans: 'DM Sans', system-ui, sans-serif;
@@ -64,7 +143,7 @@
 
     /* Scroll reveal */
     .reveal {
-      opacity: 0;
+      opacity: 1;
       transform: translateY(24px);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
@@ -102,8 +181,8 @@
     const { useState, useEffect, useRef } = React;
 
     const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-      "accentColor": "oklch(0.52 0.12 155)",
-      "heroHeadline": "Software that works\nfor your business.",
+      "accentColor": "#2f7d56",
+      "heroHeadline": "Custom software for\nbusinesses that need it to work.",
       "showTestimonials": false
     }/*EDITMODE-END*/;
 
@@ -129,7 +208,7 @@
         return () => window.removeEventListener('scroll', onScroll);
       }, []);
 
-      const links = ['Services', 'Expertise', 'Projects', 'About', 'Contact'];
+      const links = ['Services', 'Expertise', 'Projects', 'About', 'FAQ', 'Contact'];
 
       const navStyle = {
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
@@ -188,7 +267,7 @@
           <div style={{ maxWidth: 1100, margin: '0 auto', width: '100%' }}>
             <div style={{ maxWidth: 720 }}>
               <p className="reveal" style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', fontWeight: 500, letterSpacing: '0.12em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 24 }}>
-                Software Development Consulting
+                Custom Software Development · Idaho & Remote
               </p>
               <h1 className="reveal reveal-delay-1" style={{
                 fontFamily: 'var(--serif)', fontSize: 'clamp(2.8rem, 6vw, 5rem)',
@@ -198,7 +277,7 @@
                 {headline.map((l, i) => <span key={i}>{l}{i < headline.length - 1 && <br />}</span>)}
               </h1>
               <p className="reveal reveal-delay-2" style={{ fontSize: '1.15rem', color: 'var(--ink-mid)', maxWidth: 560, marginBottom: 44, lineHeight: 1.7 }}>
-                From greenfield builds to modernizing legacy systems — I help small businesses ship reliable, maintainable software that scales with them.
+                I help small businesses replace fragile spreadsheets, modernize aging applications, and build reliable web software that supports the way they actually operate.
               </p>
               <div className="reveal reveal-delay-3" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
                 <a href="#contact" style={{
@@ -208,7 +287,7 @@
                 }}
                   onMouseEnter={e => e.target.style.opacity = '0.85'}
                   onMouseLeave={e => e.target.style.opacity = '1'}
-                >Start a project</a>
+                >Book a project consult</a>
                 <a href="#projects" style={{
                   border: '1.5px solid var(--border)', color: 'var(--ink)', padding: '14px 32px',
                   borderRadius: 100, fontWeight: 500, fontSize: '0.95rem',
@@ -216,8 +295,42 @@
                 }}
                   onMouseEnter={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.color = 'var(--accent)'; }}
                   onMouseLeave={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.color = 'var(--ink)'; }}
-                >View projects</a>
+                >See selected work</a>
               </div>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    /* ── Fit ── */
+    const fitItems = [
+      'Your business runs on spreadsheets, manual workarounds, or disconnected tools.',
+      'You have a legacy Rails, .NET, or custom app that needs stability before new features.',
+      'You need an experienced solo consultant who can talk directly with business owners and technical teams.',
+      'You want maintainable software, clear communication, and no agency handoffs.'
+    ];
+
+    function BestFit() {
+      return (
+        <section id="fit" style={{ background: 'var(--bg)', padding: '90px 32px 40px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 56, alignItems: 'start' }}>
+            <div>
+              <p className="reveal" style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 500, letterSpacing: '0.12em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 16 }}>Best fit</p>
+              <h2 className="reveal reveal-delay-1" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, lineHeight: 1.2, marginBottom: 20 }}>
+                Practical software help for growing small businesses.
+              </h2>
+              <p className="reveal reveal-delay-2" style={{ color: 'var(--ink-mid)', lineHeight: 1.8 }}>
+                JBK Consulting is a good fit when off-the-shelf software no longer matches your workflow, but you do not need a large agency or full-time engineering team.
+              </p>
+            </div>
+            <div className="reveal reveal-delay-2" style={{ display: 'grid', gap: 14 }}>
+              {fitItems.map((item, i) => (
+                <div key={i} style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 12, padding: '22px 24px', display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+                  <span style={{ width: 24, height: 24, borderRadius: '50%', background: 'var(--accent-light)', color: 'var(--accent)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, flexShrink: 0 }}>✓</span>
+                  <p style={{ color: 'var(--ink-mid)', fontSize: '0.95rem', lineHeight: 1.65 }}>{item}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -226,10 +339,10 @@
 
     /* ── Services ── */
     const services = [
-      { title: 'Web Application Development', desc: 'Full-stack web apps built to last — architected for clarity, performance, and your team\'s ability to maintain them long-term.' },
-      { title: 'Legacy System Modernization', desc: 'Bring aging codebases back to life. I\'ll assess what you have, chart a path forward, and migrate without disrupting your business.' },
-      { title: 'API Design & Integration', desc: 'Clean, well-documented APIs and third-party integrations that connect your tools and let your systems talk to each other reliably.' },
-      { title: 'Technical Advisory', desc: 'Need a second opinion on architecture, a tech stack decision, or a roadmap? I\'ll help you think through the tradeoffs clearly.' },
+      { title: 'Custom Web Applications', desc: 'Purpose-built internal tools, customer portals, dashboards, and workflow systems designed around how your business actually runs.' },
+      { title: 'Legacy System Modernization', desc: 'Stabilize aging Rails, .NET, or custom codebases, reduce risk, and create a realistic path forward without disrupting daily operations.' },
+      { title: 'API Design & Integration', desc: 'Connect CRMs, payment systems, data platforms, internal tools, and third-party services with clean, reliable integrations.' },
+      { title: 'Technical Advisory', desc: 'Get senior technical judgment for architecture decisions, vendor reviews, roadmap planning, estimates, and rescue projects.' },
     ];
 
     function Services() {
@@ -238,7 +351,7 @@
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p className="reveal" style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 500, letterSpacing: '0.12em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 16 }}>What I do</p>
             <h2 className="reveal reveal-delay-1" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: '#fafaf7', marginBottom: 60, lineHeight: 1.2 }}>
-              Services
+              Ways I can help
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 2 }}>
               {services.map((s, i) => (
@@ -253,6 +366,38 @@
                   <div style={{ width: 36, height: 3, background: 'var(--accent)', marginBottom: 24, borderRadius: 2 }} />
                   <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.2rem', fontWeight: 600, color: '#fafaf7', marginBottom: 12 }}>{s.title}</h3>
                   <p style={{ color: 'rgba(250,250,247,0.55)', fontSize: '0.9rem', lineHeight: 1.75 }}>{s.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    /* ── Engagements ── */
+    const engagements = [
+      { title: 'Software Health Check', desc: 'A focused review of an existing application, architecture, deployment process, and risk areas with prioritized recommendations.' },
+      { title: 'Build or Modernization Sprint', desc: 'A scoped implementation engagement for a new feature, internal tool, integration, or modernization milestone.' },
+      { title: 'Ongoing Technical Partner', desc: 'Fractional senior engineering support for businesses that need steady product, architecture, and implementation help.' },
+    ];
+
+    function Engagements() {
+      return (
+        <section id="engagements" style={{ background: 'var(--bg-dark)', padding: '90px 32px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <p className="reveal" style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 500, letterSpacing: '0.12em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 16 }}>How work starts</p>
+            <h2 className="reveal reveal-delay-1" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: '#fafaf7', marginBottom: 18, lineHeight: 1.2 }}>
+              Start with a clear next step.
+            </h2>
+            <p className="reveal reveal-delay-2" style={{ color: 'rgba(250,250,247,0.58)', maxWidth: 680, lineHeight: 1.8, marginBottom: 44 }}>
+              Whether you need a second opinion, a rescue plan, or a production-ready build, the engagement should be scoped enough to reduce uncertainty before writing a lot of code.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 18 }}>
+              {engagements.map((e, i) => (
+                <div key={i} className={`reveal reveal-delay-${i}`} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '30px 28px' }}>
+                  <div style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.78rem', marginBottom: 14 }}>0{i + 1}</div>
+                  <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.25rem', fontWeight: 600, color: '#fafaf7', marginBottom: 12 }}>{e.title}</h3>
+                  <p style={{ color: 'rgba(250,250,247,0.56)', fontSize: '0.92rem', lineHeight: 1.75 }}>{e.desc}</p>
                 </div>
               ))}
             </div>
@@ -340,7 +485,7 @@
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <p className="reveal" style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 500, letterSpacing: '0.12em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 16 }}>Portfolio</p>
             <h2 className="reveal reveal-delay-1" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: 'var(--ink)', marginBottom: 60, lineHeight: 1.2 }}>
-              Current projects
+              Selected work
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 24 }}>
               {projects.map((p, i) => (
@@ -448,6 +593,48 @@
       );
     }
 
+
+    /* ── FAQ ── */
+    const faqs = [
+      {
+        q: 'What kind of projects are the best fit?',
+        a: 'Custom web applications, internal tools, legacy app stabilization, API integrations, data-heavy workflows, and backend-heavy systems where reliability and maintainability matter.'
+      },
+      {
+        q: 'Can you work with an existing codebase?',
+        a: 'Yes. I can review the current architecture, find the riskiest areas, improve deployment and observability, clean up technical debt, and create a practical modernization plan.'
+      },
+      {
+        q: 'Do I need a full specification before reaching out?',
+        a: 'No. A short description of the business problem, what tools you use today, and what outcome you want is enough to start a useful conversation.'
+      },
+      {
+        q: 'Do you work only in Idaho?',
+        a: 'No. I am based in Idaho and available for remote engagements nationwide.'
+      }
+    ];
+
+    function FAQ() {
+      return (
+        <section id="faq" style={{ background: 'var(--bg)', padding: '100px 32px' }}>
+          <div style={{ maxWidth: 900, margin: '0 auto' }}>
+            <p className="reveal" style={{ fontFamily: 'var(--sans)', fontSize: '0.8rem', fontWeight: 500, letterSpacing: '0.12em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: 16 }}>Common questions</p>
+            <h2 className="reveal reveal-delay-1" style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: 'var(--ink)', marginBottom: 44, lineHeight: 1.2 }}>
+              Before we talk
+            </h2>
+            <div style={{ display: 'grid', gap: 16 }}>
+              {faqs.map((item, i) => (
+                <div key={i} className={`reveal reveal-delay-${i % 4}`} style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 12, padding: '28px 30px' }}>
+                  <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.15rem', fontWeight: 600, marginBottom: 10 }}>{item.q}</h3>
+                  <p style={{ color: 'var(--ink-mid)', fontSize: '0.95rem', lineHeight: 1.75 }}>{item.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
     /* ── Contact ── */
     function Contact() {
       const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -456,7 +643,10 @@
       const handleSubmit = (e) => {
         e.preventDefault();
         setStatus('sending');
-        setTimeout(() => setStatus('done'), 1200);
+        const subject = encodeURIComponent(`Project inquiry from ${form.name || 'JBK Consulting website'}`);
+        const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`);
+        window.location.href = `mailto:justin@jbkconsultingllc.com?subject=${subject}&body=${body}`;
+        setTimeout(() => setStatus('done'), 600);
       };
 
       return (
@@ -468,7 +658,7 @@
                 Got a project<br />in mind?
               </h2>
               <p className="reveal reveal-delay-2" style={{ color: 'rgba(250,250,247,0.55)', lineHeight: 1.8, marginBottom: 40 }}>
-                Send a message or reach out directly. I typically respond within one business day.
+                Tell me what is slowing your business down, what software you already have, and what a successful outcome would look like. I typically respond within one business day.
               </p>
               <a href="mailto:justin@jbkconsultingllc.com" className="reveal reveal-delay-3" style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
@@ -489,7 +679,7 @@
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4.5 4.5L16 6" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                   </div>
                   <h3 style={{ fontFamily: 'var(--serif)', fontSize: '1.3rem', color: '#fafaf7', marginBottom: 12 }}>Message received!</h3>
-                  <p style={{ color: 'rgba(250,250,247,0.55)', fontSize: '0.9rem' }}>I'll be in touch within one business day.</p>
+                  <p style={{ color: 'rgba(250,250,247,0.55)', fontSize: '0.9rem' }}>Your email client should be open with the message ready to send.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -533,7 +723,7 @@
                     padding: '14px', fontWeight: 600, fontSize: '0.95rem', cursor: 'pointer',
                     fontFamily: 'var(--sans)', transition: 'opacity 0.2s', opacity: status === 'sending' ? 0.7 : 1,
                   }}>
-                    {status === 'sending' ? 'Sending…' : 'Send message'}
+                    {status === 'sending' ? 'Opening email…' : 'Start the conversation'}
                   </button>
                 </form>
               )}
@@ -567,10 +757,10 @@
           <div style={{ marginBottom: 14 }}>
             <label style={{ display: 'block', color: 'var(--ink-soft)', marginBottom: 6, fontSize: '0.78rem' }}>Accent color</label>
             {[
-              { label: 'Sage green', val: 'oklch(0.52 0.12 155)' },
-              { label: 'Terracotta', val: 'oklch(0.52 0.12 35)' },
-              { label: 'Slate blue', val: 'oklch(0.52 0.12 250)' },
-              { label: 'Warm plum', val: 'oklch(0.52 0.12 310)' },
+              { label: 'Sage green', val: '#2f7d56' },
+              { label: 'Terracotta', val: '#a75f3f' },
+              { label: 'Slate blue', val: '#496f9d' },
+              { label: 'Warm plum', val: '#8b5b88' },
             ].map(c => (
               <button key={c.val} onClick={() => {
                 document.documentElement.style.setProperty('--accent', c.val);
@@ -627,7 +817,7 @@
       }, []);
 
       useEffect(() => {
-        const sections = ['services', 'expertise', 'projects', 'about', 'testimonials', 'contact'];
+        const sections = ['services', 'expertise', 'projects', 'about', 'faq', 'testimonials', 'contact'];
         const obs = new IntersectionObserver(entries => {
           entries.forEach(e => { if (e.isIntersecting) setActiveSection(e.target.id); });
         }, { threshold: 0.3 });
@@ -639,10 +829,13 @@
         <>
           <Nav activeSection={activeSection} />
           <Hero tweaks={tweaks} />
+          <BestFit />
           <Services />
+          <Engagements />
           <Expertise />
           <Projects />
           <About />
+          <FAQ />
           <Testimonials show={tweaks.showTestimonials} />
           <Contact />
           <Footer />
